@@ -6,6 +6,7 @@
     border: none;
     outline: none;
     box-sizing: border-box;
+    transition: 1s ease;
 }
 
 body {
@@ -41,8 +42,50 @@ header nav a {
     font-size: 18px;
 }
 
+header nav a:hover {
+    color: #723172;
+}
+
 .btn-nav {
     background: none;
-    border: 1px solid white;
+    border: 2px solid #723172;
     border-radius: 8px;
+    color: white;
+    width: 200px;
+    padding: 10px 0;
 }
+
+.btn-nav:hover {
+    background-color: #723172;
+}
+
+/* form section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    border-radius: 8px;
+    flex-grow: 0.2;
+    margin-top: -130px;
+}
+
+main .container-form h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+
+}
+
+main .container-main-image {
+    display: flex;
+    flex-grow: 0.7;
+}
+
